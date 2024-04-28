@@ -1,0 +1,27 @@
+Instalar o Docker/Visual Studio/Azure CLI/Git
+
+No prompt logar no Azure CLI
+
+   az login
+
+Na pasta do projeto, abrir o cmd e logar no registro de conteiner:
+
+   az acr login --name leilaosodre
+
+Criar o arquivo docker:
+
+   docker build -t scrape_sodre .
+
+Executar o script:
+
+   docker run scrape_sodre
+
+Tagear o script:
+
+   docker tag scrape_sodre leilaosodre.azurecr.io/scrape_sodre:v3
+
+Subir para o Azure:
+
+   docker push leilaosodre.azurecr.io/scrape_sodre:v3
+
+
