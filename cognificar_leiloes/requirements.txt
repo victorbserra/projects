@@ -1,0 +1,8 @@
+pandas
+numpy
+selenium-wire
+beautifulsoup4
+google
+webdriver-manager
+psutil
+azure-storage-blob
